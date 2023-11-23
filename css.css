@@ -1,0 +1,484 @@
+/* Add your custom CSS styles here */
+/* Example styles for footer */
+
+body {
+    font-family: "Helvetica", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body {
+    background-color: #F9DEC9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #3D0C11;
+    color: #3D0C11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+    margin-left: 50px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    ul li {
+        margin-right: 40px; /* Increase the margin for more space */
+        font-size: 20px; /* Adjust the font size */
+        color: #F9DEC9; /* Set the text color */
+    }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+.navbar-toggler {
+    border-color: #fff; /* Toggler color */
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 30px; /* Adjust size if needed */
+    height: 30px; /* Adjust size if needed */
+}
+.navbar-collapse .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .navbar-collapse .navbar-nav .nav-item {
+        margin-right: 40px; /* Increase the margin for space between items */
+    }
+
+        .navbar-collapse .navbar-nav .nav-item a {
+            font-size: 20px; /* Adjust the font size */
+            color: #F9DEC9; /* Set the text color */
+        }
+.navbar-nav .nav-item a:hover {
+    color: #F78CA2; /* Change the color on hover */
+}
+.navbar-nav .nav-item a {
+    font-size: 20px;
+    color: #F9DEC9;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+
+.social_media a {
+    color: #fff;
+    margin-left: 20px;
+}
+            
+    .main_content {
+        width: 100%;
+    }
+
+.header {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+
+    }
+
+.highway {
+    height: 150px;
+    background-color: #5F6564;
+    position: relative;
+    overflow: hidden;
+}
+
+.road {
+    height: 100%;
+    width: 100%;
+}
+
+.stripes {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 6px;
+    background: repeating-linear-gradient(to right, #fff, #fff 5px, transparent 5px, transparent 10px);
+}
+.left-image,
+.right-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-image {
+    left: 10px; /* Adjust left position as needed */
+}
+
+.right-image {
+    right: 10px; /* Adjust right position as needed */
+}
+
+.header .left-image img {
+    width: 110px; /* Adjust the size as needed */
+    height: 150px; /* Maintain aspect ratio */
+}
+
+.header .right-image .main-image {
+    position:relative;
+    width: 120px; 
+    height: 140px; 
+    cursor: pointer; 
+}
+.header .right-image .hover-image {
+    padding-left: 20px;
+    width: 160px;
+    height: 140px;
+    cursor: pointer; 
+}
+.header .left-image img {
+    width: 110px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 5s linear; /* Adjust the duration to match the JavaScript */
+    left: 10px; /* Starting position, off the highway */
+}
+
+/* Define animation for the truck movement */
+@keyframes drive {
+    from {
+        left: 10px; /* Starting position */
+    }
+    to {
+        left: calc(100% + 1300px); /* End position */
+    }
+}
+
+
+
+        .main_content .info {
+            margin: 20px;
+            color: #3D0C11;
+            line-height: 25px;
+        }
+
+            .main_content .info div {
+                margin-bottom: 20px;
+            }
+.carousel-item {
+    text-align: center; /* Center the content horizontally */
+    height: 639px; /* Set a fixed height for each carousel item */
+    overflow: hidden; /* Hide any overflow */
+    padding: 50px;
+    margin-bottom: 50px; /* Center the image horizontally */
+}
+
+    .carousel-item img {
+        max-width: 100%; /* Ensure the image fits within the container */
+        height: auto; /* Maintain aspect ratio */
+        margin: auto; /* Center the image horizontally */
+    }
+
+@media (max-height: 500px) {
+    .social_media {
+        display: none !important;
+    }
+    .socials, .socialss {
+        margin: 20px;
+    }
+
+    .card {
+        margin: 20px;
+    }
+}
+.socials {
+    margin-right: 100px;
+    margin-left: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #3D0C11;
+    flex: 1;
+}
+.socialss {
+    margin-right: 120px;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #3D0C11;
+    flex: 1;
+}
+.contactss {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-top: 40px;
+}
+    .contactss .card {
+        margin-left: 120px;
+        margin-top: 40px;
+        width: 300px;
+    }
+
+.contacts {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: flex-start; /* Align items at the top */
+    margin: 40px 0; /* Adjust margins */
+}
+
+.socials, .socialss {
+    width: 45%; /* Adjust width for text content */
+    padding: 0 20px; /* Add padding */
+}
+
+.card {
+    width: 300px;
+    margin: 40px;
+    background-color: #E0E0E0;
+    color: #3D0C11;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #0E3A53;
+    color: #FFF;
+    border-color: #3D0C11;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .contacts {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .socials, .socialss {
+        width: 100%; /* Full width for text content */
+        margin: 20px 0; /* Adjust margins */
+    }
+
+    .card {
+        margin: 20px 0; /* Adjust margins */
+    }
+    .guitar {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.spacer {
+    flex: 1; /* This empty div will take up space on the left */
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+    .footer p {
+        margin: 0;
+        text-align: center;
+    }
+    .footer h5 {
+        margin: 0;
+        text-align: center;
+    }
+
+/* Style for the guitar */
+
+.image-section {
+    text-align: right; /* Center the image horizontally if needed */
+    position: relative;
+}
+
+    .image-section img {
+        max-width: 100%;
+        height: 700px;
+        /* Adjust other styles as needed */
+    }
+
+/* Style for the image section */
+.guitar {
+    position: absolute;
+    top: 75%; /* Adjust based on header and footer heights */
+    left: 93.4%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px; /* Adjust the height as needed */
+    z-index: 2;
+}
+
+.string {
+    width: 4px;
+    height: 100%;
+    background-color: #888;
+    cursor: pointer;
+    margin: 0 7px;
+}
+.spacer {
+    height: 0px; /* Add some space between the guitar and the image */
+}
+
+.audio-visualizer {
+    position: absolute;
+    top: 65%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 20%;
+    height: 150px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.rectangle {
+    width: 20px;
+    background-color: darkblue;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+}
+.guitar_cont {
+    width: 100%;
+}
+
+.popup {
+    position: absolute; /* Position it relative to its parent */
+    bottom: 30px; /* Adjust the distance from the bottom */
+    right: 1300px; /* Adjust the distance from the right */
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3; /* Ensure it's above other elements */
+}
+
+.virguitext {
+    position: absolute;
+    top: 45%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 70%;
+    height: 150px;
+    background-color: #F9DEC9;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.fbackground {
+    position: relative;
+    background-image: url('marss.png'); /* Replace 'your-background-image.jpg' with your image path */
+    background-size: cover;
+    height: 100vh; /* Adjust as needed */
+}
+
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-player {
+    width: 768px; /* Set video player width */
+    height: 481px; /* Set video player height */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+    .video-player iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+.button-above-video {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.popup-button {
+    padding: 8px 16px;
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+/* Hidden by default */
+.popuptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+/* Show the popup text when clicking the button */
+.popup-button:focus + .popuptext {
+    visibility: visible;
+}
+
